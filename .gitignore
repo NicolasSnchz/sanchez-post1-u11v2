@@ -1,15 +1,16 @@
-*.iml
+﻿*.iml
 .gradle
 /local.properties
 /.idea/
 .DS_Store
 /build
-/captures
+**/build/
+captures/
 .externalNativeBuild
 .cxx
 local.properties
 
-# Keystore files - nunca subir al repositorio
+# Keystore files
 *.jks
 *.keystore
 release-key.jks
