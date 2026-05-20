@@ -9,8 +9,3 @@ captures/
 .externalNativeBuild
 .cxx
 local.properties
-
-# Keystore files
-*.jks
-*.keystore
-release-key.jks
