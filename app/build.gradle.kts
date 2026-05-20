@@ -1,4 +1,4 @@
-import org.gradle.api.tasks.testing.Test
+﻿import org.gradle.api.tasks.testing.Test
 import org.gradle.testing.jacoco.tasks.JacocoCoverageVerification
 import org.gradle.testing.jacoco.tasks.JacocoReport
 
