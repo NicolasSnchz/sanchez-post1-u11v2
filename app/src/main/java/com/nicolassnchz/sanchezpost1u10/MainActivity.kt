@@ -57,9 +57,7 @@ fun NotesDemoApp() {
     )
 
     val selectedState = remember {
-        mutableStateOf<NotesUiState>(
-            NotesUiState.Success(successNotes)
-        )
+        mutableStateOf<NotesUiState>(NotesUiState.Success(successNotes))
     }
 
     Column(
@@ -84,21 +82,13 @@ fun NotesDemoApp() {
                 .fillMaxWidth()
                 .padding(horizontal = 16.dp)
         ) {
-            Button(
-                onClick = {
-                    selectedState.value = NotesUiState.Loading
-                }
-            ) {
+            Button(onClick = { selectedState.value = NotesUiState.Loading }) {
                 Text(text = "Loading")
             }
 
             Spacer(modifier = Modifier.padding(horizontal = 4.dp))
 
-            Button(
-                onClick = {
-                    selectedState.value = NotesUiState.Success(successNotes)
-                }
-            ) {
+            Button(onClick = { selectedState.value = NotesUiState.Success(successNotes) }) {
                 Text(text = "Success")
             }
 
